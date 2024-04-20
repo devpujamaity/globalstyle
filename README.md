@@ -1,0 +1,2 @@
+# globalstyle
+global CSS
