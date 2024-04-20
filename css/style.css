@@ -104,6 +104,7 @@ blockquote {
     font-weight: 500;
     display: inline-block;
     transition: all .4s ease-in-out;
+    margin-right: 45px;
 }
 
 .primary-button:hover{
@@ -120,6 +121,7 @@ blockquote {
     border-radius: 80px;
     font-weight: 500;
     display: inline-block;
+    margin-right: 45px;
 }
 
 .secondary-button:hover {
@@ -183,7 +185,7 @@ blockquote {
 }
 
 label {
-    margin-bottom: 17px;
+    margin-bottom: 7px;
     font-weight: 500;
     font-size: 15px;
     display: block;
@@ -204,6 +206,10 @@ input[type="date"] {
     padding: 9px 12px;
     margin-bottom: 20px;
     border-radius: 8px;
+}
+
+.gender {
+    margin-bottom: 10px;
 }
 
 textarea {
@@ -335,13 +341,25 @@ input[type="radio"]:checked + label::before {
     textarea {
         height: 112px;
     }
-}    
+} 
+
+@media (max-width: 575px) {
+    .primary-button {
+        margin-right: 45px;
+    }
+    .tertiary-button {
+        margin-left: 22px;
+    }
+}
 
 @media (max-width: 479px) {
     .column-6 {
         width: 100%;
     }
-    .primary-button,
+    .primary-button {
+        padding: 8px 19px;
+        margin-bottom: 20px;
+    }
     .secondary-button {
         padding: 8px 19px;
     }
